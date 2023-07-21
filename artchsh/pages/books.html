@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/books.js" type="module"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>artchsh - books</title>
+</head>
+<body class="m-2 bg-black text-white">
+    <div class="flex w-full md:w-96 items-center gap-2">
+        <label for="search" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Поиск</label>
+        <input type="text" id="search" class="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Война и Мир" required>
+    </div>
+    <div id="books-parser" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-fit mt-2"></div>
+</body>
+</html>

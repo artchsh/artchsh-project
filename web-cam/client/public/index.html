@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-cam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="container" class="flex flex-col md:max-w-md">
+        <video id="gum-local" autoplay playsinline style="display: none;"></video>
+        <div>
+            <button type="button" class="flex bg-black hover:bg-zinc-600 px-3 py-2 text-white font-bold" id="showVideo">Open camera</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

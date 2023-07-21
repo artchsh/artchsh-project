@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/universitySchedule.js" type="module"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        table td,
+        table th {
+            padding: 10px;
+        }
+        table td {
+            height: 44px;
+        }
+    </style>
+    <title>artchsh - schedule</title>
+</head>
+
+<body>
+    <div class="flex gap-2 items-center m-2">
+        <div class="flex gap-2 items-center" id="googlesheets_input_group">
+            <label>Google Sheets Link (Must be public): </label>
+            <input id="google_sheets_link" class="p-2 border-black border rounded-lg" title="google sheets link" placeholder="https://docs.google.com/spreadsheets/d/..." type="text">
+        </div>
+        <button id="refresh_button" class="bg-black rounded-lg hover:bg-zinc-600 px-3 py-2 text-white">Load</button>
+    </div>
+    <table id="table">
+        <thead class="bg-blue-200">
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody id="schedule">
+
+        </tbody>
+
+    </table>
+</body>
+
+</html>
